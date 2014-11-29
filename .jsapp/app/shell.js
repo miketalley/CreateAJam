@@ -6,7 +6,7 @@ define(function (require) {
      activate: function () {
        router.map([
          { route: '', title:'Home', moduleId: 'sections/home', nav: true },
-         { route:'rainier', title:'Mount Rainier', moduleId:'sections/rainier', nav:true }
+         { route:'rainier', title:'Instruments', moduleId:'sections/instruments', nav:true }
        ]).buildNavigationModel();
  
        return router.activate();
