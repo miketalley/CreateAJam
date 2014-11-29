@@ -4,19 +4,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title>Create-a-Jam API</title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
 
   <body>
+  <!-- NAVBAR -->
+	  <div id="navbar">
+			<nav class="top-bar" data-topbar="">
+		    <ul class="title-area">
+		      <li class="name">
+		        <h1><a href="#">Create-a-Jam API</a></h1>
+		      </li>
+		      <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+		    </ul>
 
-    <%= yield %>
+	    
+			  <section class="top-bar-section">
+			      <ul class="right">
+			        <li class="has-form">
+			          <div class="row collapse">
+			            <div class="small-8 large-7 columns">
+			              <input type="text" placeholder="Search">
+			            </div>
+			            <div class="small-3 large-3 end columns">
+			              <a href="#" class="alert button expand">Go</a>
+			            </div>
+			          </div>
+			        </li>
+			        <!-- USERS Dropdown -->
+			        <li class="has-dropdown not-click">
+			          <a href="#">Users</a>
+			          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+			            <li><a href="#">All</a></li>
+			            <li><a href="#">Search</a></li>
+			          </ul>
+			        </li>
+			        <!-- INSTRUMENTS Dropdown -->
+			        <li class="has-dropdown not-click">
+			          <a href="#">Instruments</a>
+			          <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+			            <li><a href="#">All</a></li>
+			            <li><a href="#">Search</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </section>
+			  </nav>
+		</div>
+
+  	<!-- CONTENT -->
+		<div id="content">
+			<%= yield %>
+		</div>
+		<!-- FOOTER -->
+		<div id="footer">
+		</div>
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
