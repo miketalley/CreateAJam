@@ -8,7 +8,9 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.integer :zip
-      t.integer :age
+      t.string :phone
+      t.date :dob
+      # t.array :instruments
 
       ##### DEVISE STUFF ######
 

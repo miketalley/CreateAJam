@@ -1,7 +1,7 @@
 class InstrumentsController < ApplicationController
   before_action :set_instrument, only: [:show, :edit, :update, :destroy]
 
-  respond_to :html
+  respond_to :json
 
   def index
     @instruments = Instrument.all

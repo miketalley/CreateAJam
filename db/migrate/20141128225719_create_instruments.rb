@@ -2,9 +2,9 @@ class CreateInstruments < ActiveRecord::Migration
   def change
     create_table :instruments do |t|
 
-    	t.string :type, null: false
-    	t.string :class
+    	t.references :instrument_type, null: false
     	t.boolean :electric
+    	t.string :name
     	t.string :make
     	t.string :model
     	t.string :photo_url

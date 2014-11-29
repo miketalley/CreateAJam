@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :jam_sessions
+
   resources :instruments
 
   resources :homes
