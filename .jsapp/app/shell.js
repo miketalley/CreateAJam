@@ -10,9 +10,9 @@ define(function (require) {
         { route:'jam-sessions', title:'Jam Sessions', moduleId:'sections/jamSessions', nav:true },
         { route:'musicians', title:'Musicians', moduleId:'sections/musicians', nav:true }
 
-       ]).buildNavigationModel();
+      ]).buildNavigationModel();
 
-       return router.activate();
-     }
+      return router.activate();
+    }
    };
 });

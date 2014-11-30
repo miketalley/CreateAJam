@@ -11,19 +11,19 @@ requirejs.config({
 });
 
 define(function (require) {
-   var system = require('durandal/system'),
-       app = require('durandal/app');
+  var system = require('durandal/system'),
+    app = require('durandal/app');
 
-   system.debug(true);
+  system.debug(true);
 
-   app.title = 'Global Jamspace';
+  app.title = 'Global Jamspace';
 
-   app.configurePlugins({
-     router:true,
-     dialog: true
-   });
+  app.configurePlugins({
+    router: true,
+    dialog: true
+  });
 
-   app.start().then(function() {
-     app.setRoot('shell');
-   });
+  app.start().then(function() {
+    app.setRoot('shell');
+  });
 });
