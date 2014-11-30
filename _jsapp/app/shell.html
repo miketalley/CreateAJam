@@ -18,7 +18,7 @@
       <ul class="right">
         <li class="divider"></li>
         <li class="has-dropdown not-click">
-          <a href="#jam-sessions">Sessions</a>
+          <a href="#jamSessions">Sessions</a>
           <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li><li class="parent-link show-for-small"><a class="parent-link js-generated" href="#">Main Item 1</a></li>
             <li><label>Section Name</label></li>
             <li class="has-dropdown not-click">
@@ -67,14 +67,22 @@
         </li>
         <li class="divider"></li>
         <li class="">
-          <a data-bind="click: login, visible: !signedIn">Login</a>
+          <a href="#login-modal" rel="modal:open" data-bind="click: login, visible: !signedIn">Login</a>
         </li>
         <li class="divider"></li>
         <li class="">
-          <a data-bind="click: signUp, visible: !signedIn">Sign Up</a>
+          <a href="#signUp-modal" rel="modal:open" data-bind="click: signUp, visible: !signedIn">Sign Up</a>
         </li>
       </ul>
     </section></nav>
+
+    <div id="login-modal" style="display:none;">
+      <p>Login! <a href="#" rel="modal:close">Close</a> or press ESC</p>
+    </div>
+
+    <div id="signUp-modal" style="display:none;">
+      <p>Sign Up!<a href="#" rel="modal:close">Close</a> or press ESC</p>
+    </div>
 
 
  <!-- <div class="navbar navbar-fixed-top">
