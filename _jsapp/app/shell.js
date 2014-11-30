@@ -1,10 +1,12 @@
-define(function (require) {
-  var router = require('plugins/router');
+define(['plugins/router'], function (router) {
 
-  return {
-    router: router,
-    activate: function () {
-      router.map([
+  function Shell(){
+    var self = this;
+
+    self.router = router;
+
+    self.activate = function(){
+      self.router.map([
         { route: '', title:'Home', moduleId: 'sections/home', nav: true },
         { route:'instruments', title:'Instruments', moduleId:'sections/instruments', nav:true },
         { route:'jam-sessions', title:'Jam Sessions', moduleId:'sections/jamSessions', nav:true },
@@ -12,7 +14,21 @@ define(function (require) {
 
       ]).buildNavigationModel();
 
-      return router.activate();
-    }
-   };
+      return self.router.activate();
+    };
+
+    self.login = function(){
+
+    };
+
+    self.signUp = function(){
+
+    };
+
+    self.signedIn = false;
+
+  }
+
+  return Shell;
+
 });

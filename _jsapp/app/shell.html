@@ -4,12 +4,12 @@
       <!-- Title Area -->
       <li class="name">
         <h1 class="luckiest-guy">
-          <a href="#">
+          <a href="#/">
             Global Jamspace
           </a>
         </h1>
       </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
 
 
@@ -64,6 +64,14 @@
             <li class="divider"></li>
             <li><a href="#">See all →</a></li>
           </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="">
+          <a data-bind="click: login, visible: !signedIn">Login</a>
+        </li>
+        <li class="divider"></li>
+        <li class="">
+          <a data-bind="click: signUp, visible: !signedIn">Sign Up</a>
         </li>
       </ul>
     </section></nav>
