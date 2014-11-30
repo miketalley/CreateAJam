@@ -96,6 +96,7 @@ GEM
     pg (0.18.0.pre20141117110243)
     pg (0.18.0.pre20141117110243-x86-mingw32)
     rack (1.6.0.beta2)
+    rack-cors (0.2.9)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.2.0.rc1)
@@ -187,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg (= 0.18.0.pre20141117110243)
+  rack-cors
   rails (= 4.2.0.rc1)
   rails_12factor
   sass-rails (~> 4.0)

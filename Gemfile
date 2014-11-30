@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'foundation-rails'
 gem 'simple_token_authentication', '~> 1.0'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
