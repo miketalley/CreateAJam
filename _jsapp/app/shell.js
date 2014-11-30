@@ -19,6 +19,10 @@ define(['plugins/router', 'jquery.modal'], function (router) {
 
     self.login = function(){
       console.log("Login");
+      $.get("http://jamsync.herokuapp.com/users/sign_up.json", function(html) {
+        debugger;
+        $(html).appendTo('body').modal();
+      });
     };
 
     self.signUp = function(){

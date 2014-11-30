@@ -22,17 +22,17 @@ ActiveRecord::Schema.define(version: 20141130190904) do
   end
 
   create_table "instruments", force: true do |t|
-    t.string   "type",             null: false
-    t.string   "class"
+    t.integer  "instrument_type_id", null: false
     t.boolean  "electric"
+    t.string   "name"
     t.string   "make"
     t.string   "model"
     t.string   "photo_url"
     t.integer  "manufacture_year"
     t.integer  "acquire_year"
     t.string   "description"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "jam_sessions", force: true do |t|
@@ -56,7 +56,8 @@ ActiveRecord::Schema.define(version: 20141130190904) do
     t.string   "city"
     t.string   "state"
     t.integer  "zip"
-    t.integer  "age"
+    t.string   "phone"
+    t.date     "dob"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
