@@ -16,7 +16,7 @@ define(function (require) {
 
    system.debug(true);
 
-   app.title = 'Create-a-Jam';
+   app.title = 'Global Jamspace';
 
    app.configurePlugins({
      router:true,
