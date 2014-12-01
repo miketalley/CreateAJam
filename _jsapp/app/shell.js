@@ -20,16 +20,16 @@ define(['plugins/router', 'jquery.modal'], function (router) {
     self.login = function(){
       console.log("Login");
       $.get("http://jamsync.herokuapp.com/users/sign_in", function(html) {
-        var modalHTML = $("<div>").addClass("login modal").append(html);
-        $(modalHTML).appendTo('body').modal();
+        $(html).appendTo('#login-modal');
+        $('#login-modal').modal();
       });
     };
 
     self.signUp = function(){
       console.log("Sign Up");
       $.get("http://jamsync.herokuapp.com/users/sign_up", function(html) {
-        var modalHTML = $("<div>").addClass("signUp modal").append(html);
-        $(modalHTML).appendTo('body').modal();
+        $(html).appendTo('#signUp-modal');
+        $('#signUp-modal').modal();
       });
     };
 
