@@ -28,7 +28,7 @@ define(['plugins/router', 'jquery.modal'], function (router) {
     self.signUp = function(){
       console.log("Sign Up");
       $.get("http://jamsync.herokuapp.com/users/sign_up", function(html) {
-        $(html).appendTo('#signUp-modal');
+        $(html).closest("form").attr("data-bind", "submit: function(){ alert('Success!')}").appendTo('#signUp-modal');
         $('#signUp-modal').modal();
       });
     };
