@@ -1,3 +1,8 @@
 .luckiest-guy {
   font-family: 'Luckiest Guy', cursive;
 }
+
+.login.modal {
+  width: 30%;
+  margin: 0 auto;
+}
