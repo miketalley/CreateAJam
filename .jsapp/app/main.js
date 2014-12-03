@@ -6,7 +6,7 @@ requirejs.config({
     'transitions' : '../lib/durandal/js/transitions',
     'knockout': '../lib/knockout/knockout-3.2.0',
     'jquery': '../lib/jquery/jquery-2.1.1',
-    'globals': '/js/globals'
+    'globals': '../app/js/globals'
     } 
 });
  
