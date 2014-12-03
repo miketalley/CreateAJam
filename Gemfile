@@ -4,7 +4,11 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'foundation-rails'
+gem 'simple_token_authentication', '~> 1.0'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'rails_12factor'
+gem 'newrelic_rpm'
+gem 'gmaps4rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
