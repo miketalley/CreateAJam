@@ -7,10 +7,14 @@ define(['plugins/router', 'modal'], function (router) {
 
     self.activate = function(){
       self.router.map([
-        { route: '', title:'Home', moduleId: 'sections/home', nav: true, hash: '#home' },
-        { route:'instruments*splat', title:'Instruments', moduleId:'sections/instruments', nav:true },
-        { route:'jamSessions*splat', title:'Jam Sessions', moduleId:'sections/jamSessions', nav:true },
-        { route:'musicians*splat', title:'Musicians', moduleId:'sections/musicians', nav:true }
+        { route: '', title:'Home', moduleId: 'shellContent', nav: true, hash: '#home' },
+        { route:'instruments', title:'Instruments', moduleId:'sections/instruments/all', nav: true },
+        { route: 'instruments/new',     title:'New Instrument',   moduleId:'sections/instruments/new',     nav: true },
+        { route:'sessions', title:'Sessions', moduleId:'sections/sessions/all', nav: true },
+        { route:'sessions/new', title:'New Sessions', moduleId:'sections/sessions/new', nav: true },
+        { route:'musicians', title:'Musicians', moduleId:'sections/musicians/all', nav: true },
+        { route: 'musicians/new',     title:'New Musician',   moduleId: 'sections/musicians/new',     nav: true }
+
 
       ]).buildNavigationModel();
 

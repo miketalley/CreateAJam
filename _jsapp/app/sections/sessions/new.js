@@ -1,6 +1,6 @@
 define(['jquery', 'knockout'], function($, ko){
 
-  function JamSessions(){
+  function NewJamSession(){
     var self = this;
 
     self.allJamSessions = ko.observable();
@@ -15,6 +15,6 @@ define(['jquery', 'knockout'], function($, ko){
     };
   }
 
-  return JamSessions;
+  return NewJamSession;
 
 });

@@ -5,8 +5,6 @@ define(['jquery', 'knockout', 'datatables', 'knockout.punches', 'dropzone', 'dat
 
     self.allInstruments = ko.observable();
 
-    self.test = "Hello!";
-
     self.activate = function(){
       initializeInstrumentsDataTable();
       // $.get('http://jamsync.herokuapp.com/instruments.json')

@@ -1,9 +1,9 @@
 define([], function(){
 
-  function Musicians(){
+  function NewMusician(){
     var self = this;
   }
 
-  return Musicians;
+  return NewMusician;
 
 });
