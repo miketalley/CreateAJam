@@ -9,7 +9,7 @@ define(['plugins/router'], function (router) {
       self.router.
         .createChildRouter()
         .makeRelative({ 
-          moduleId: 'instruments',
+          moduleId: 'instruments/index',
           fromParent: true
         })
         .map([
