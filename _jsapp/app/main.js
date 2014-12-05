@@ -7,7 +7,10 @@ requirejs.config({
     'knockout': '../lib/knockout/knockout-3.2.0',
     'knockout.punches': '../lib/knockout-punches/knockout.punches',
     'jquery': '../lib/jquery/jquery-2.1.1',
-    'jquery.modal': '../lib/jquery-modal/jquery.modal.min'
+    'modal': '../lib/jquery-modal/jquery.modal.min',
+    'datatables': '../lib/jquery-datatables/js/jquery.dataTables',
+    'datatables.foundation': '../lib/jquery-datatables-foundation/dataTables.foundation',
+    'dropzone': '../lib/dropzone/dropzone-amd-module'
     },
     shim: {
       'knockout.punches': {

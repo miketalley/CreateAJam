@@ -1,4 +1,4 @@
-define(['plugins/router', 'jquery.modal'], function (router) {
+define(['plugins/router', 'modal'], function (router) {
 
   function Shell(){
     var self = this;
@@ -8,9 +8,9 @@ define(['plugins/router', 'jquery.modal'], function (router) {
     self.activate = function(){
       self.router.map([
         { route: '', title:'Home', moduleId: 'sections/home', nav: true },
-        { route:'instruments', title:'Instruments', moduleId:'sections/instruments', nav:true },
-        { route:'jamSessions', title:'Jam Sessions', moduleId:'sections/jamSessions', nav:true },
-        { route:'musicians', title:'Musicians', moduleId:'sections/musicians', nav:true }
+        { route:'instruments*splat', title:'Instruments', moduleId:'sections/instruments/index', nav:true },
+        { route:'jamSessions*splat', title:'Jam Sessions', moduleId:'sections/jamSessions/index', nav:true },
+        { route:'musicians*splat', title:'Musicians', moduleId:'sections/musicians/index', nav:true }
 
       ]).buildNavigationModel();
 
