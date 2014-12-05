@@ -13,9 +13,12 @@ define(['plugins/router'], function (router) {
           fromParent: true
         })
         .map([
-          { route: '', title:'Instruments', moduleId: 'all', nav: true },
-          { route:'new', title:'New Instrument', moduleId:'new', nav:true }
-        ]).buildNavigationModel();
+          { route: '',        title:'Instruments',      moduleId: 'all',    nav: true,    hash: '#instruments' },
+          { route: '/new',     title:'New Instrument',   moduleId:'new',     nav: true }
+
+        ])
+        .buildNavigationModel()
+        .mapUnknownRoutes('#instruments');
 
       return self.router.activate();
     };

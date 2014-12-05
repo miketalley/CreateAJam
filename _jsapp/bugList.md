@@ -1,0 +1,1 @@
+- Login and Signup modals keep appending HTML if you click them multiple times
