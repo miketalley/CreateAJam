@@ -15,6 +15,10 @@ define(['jquery', 'knockout'], function ($, ko) {
         });
     };
 
+    self.createNewInstrument = function(){
+
+    };
+
 
 
   }
