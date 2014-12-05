@@ -8,7 +8,6 @@ define(['jquery', 'knockout'], function($, ko){
     self.activate = function(){
       $.get('http://jamsync.herokuapp.com/jam_sessions.json')
         .done(function(resp){
-          debugger;
           if(resp && resp.success){
             self.allJamSessions(resp);
           }
