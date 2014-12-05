@@ -1,9 +1,11 @@
-define(['jquery', 'knockout'], function ($, ko) {
+define(['jquery', 'knockout', 'knockout.punches'], function ($, ko) {
 
   function Instruments(){
     var self = this;
 
     self.allInstruments = ko.observable();
+
+    self.test = "Hello!";
 
     self.activate = function(){
       $.get('http://jamsync.herokuapp.com/instruments.json')
