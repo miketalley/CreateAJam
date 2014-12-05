@@ -5,6 +5,7 @@ requirejs.config({
     'plugins' : '../lib/durandal/js/plugins',
     'transitions' : '../lib/durandal/js/transitions',
     'knockout': '../lib/knockout/knockout-3.2.0',
+    'punches': '../lib/knockout-punches/knockout.punches',
     'jquery': '../lib/jquery/jquery-2.1.1',
     'jquery.modal': '../lib/jquery-modal/jquery.modal.min'
     }
