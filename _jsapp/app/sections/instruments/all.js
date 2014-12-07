@@ -6,14 +6,14 @@ define(['jquery', 'knockout', 'datatables', 'knockout.punches', 'dropzone', 'dat
     self.allInstruments = ko.observable();
 
     self.activate = function(){
-      initializeInstrumentsDataTable();
-      // $.get('http://jamsync.herokuapp.com/instruments.json')
-      //   .done(function(resp){
-      //     if(resp && resp.success){
-      //       self.allInstruments(resp);
-      //     }
-      //     initializeInstrumentsDataTable();
-      //   });
+      // initializeInstrumentsDataTable();
+      $.get('http://jamsync.herokuapp.com/instruments.json')
+        .done(function(resp){
+          if(resp && resp.success){
+            self.allInstruments(resp);
+          }
+          initializeInstrumentsDataTable();
+        });
     };
 
     self.createNewInstrument = function(){
