@@ -22,7 +22,7 @@ define(['jquery', 'knockout'], function($, ko){
 
       $.post('http://jamsync.herokuapp.com/users', user)
         .done(function(resp){
-          debugger;
+
         });
     };
 
