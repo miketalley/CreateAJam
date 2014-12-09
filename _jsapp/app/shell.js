@@ -13,7 +13,8 @@ define(['plugins/router', 'modal'], function (router) {
         { route:'sessions', title:'Sessions', moduleId:'sections/sessions/all', nav: true },
         { route:'sessions/new', title:'New Sessions', moduleId:'sections/sessions/new', nav: true },
         { route:'musicians', title:'Musicians', moduleId:'sections/musicians/all', nav: true },
-        { route: 'musicians/new',     title:'New Musician',   moduleId: 'sections/musicians/new',     nav: true }
+        { route: 'musicians/new',     title:'New Musician',   moduleId: 'sections/musicians/new',     nav: true },
+        { route: 'users/new',     title:'New User',   moduleId: 'sections/users/new',     nav: true }
 
 
       ]).buildNavigationModel();
@@ -31,8 +32,8 @@ define(['plugins/router', 'modal'], function (router) {
 
     self.signUp = function(){
       console.log("Sign Up");
-      $.get("http://jamsync.herokuapp.com/users/sign_up", function(html) {
-        $(html).closest("form").attr("data-bind", "submit: function(){ alert('Success!')}").appendTo('#signUp-modal');
+      $.get('./app/assets/forms/signUp.html', function(html) {
+        $(html).appendTo('#signUp-modal');
         $('#signUp-modal').modal();
       });
     };
